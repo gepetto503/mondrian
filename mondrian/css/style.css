@@ -1,0 +1,65 @@
+/* For testing only */
+
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:not(body):not(html) {
+  border:1px dashed #000;
+}
+
+/* End for testing */
+
+/*mobile*/
+
+body {
+  background: lightyellow;
+}
+
+.featured {
+  width: 100vw;
+  height: 50vh;
+}
+
+.columns {
+  width: 100vw;
+  height: 25vh;
+}
+
+/*tablet*/
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .container {
+    overflow: auto;
+  }
+
+  .columns {
+    width: 50vw;
+    height: 50vh;
+    float: left;
+  }
+
+}
+
+/*laptop*/
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: lightblue;
+  }
+  .featured {
+    width: 70vw;
+    height: 100vh;
+    float: left;
+  }
+
+  .columns {
+    width: 28vw;
+    height: 50vh;
+  }
+
+}
